@@ -1,7 +1,8 @@
 import axios from "axios";
 
-const axiosBase= axios.create({
-    baseURL: 'http://localhost:5500/api'
-})
+const axiosBase = axios.create({
+  // baseURL: 'http://localhost:5500/api'
+  baseURL: "https://evangadi-forum-ufct.onrender.com/api",
+});
 
 export default axiosBase;
