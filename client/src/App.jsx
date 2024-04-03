@@ -5,6 +5,7 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import axios from "./axiosConfig";
 import AskQuestion from "./Components/AskQuestion/AskQuestion";
 import Answer from "./Components/Answer/Answer";
+import Footer from "./Components/Footer/Footer[1]";
 // import footer from "./Components/Footer/Footer";
 
 export const AppState = createContext();
@@ -63,6 +64,7 @@ function App() {
         <Route path="/questions" element={< AskQuestion />} />
         <Route path="/answer" element={<Answer />} />
       </Routes>
+      <Footer/>
     </AppState.Provider>
   );
 }
